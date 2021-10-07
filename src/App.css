@@ -1,38 +1,100 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  /*width: 100vw;*/
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: nowrap;
+  flex-basis: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  justify-content: flex-start;
+
 }
 
-.App-link {
-  color: #61dafb;
+.cards{
+
+  /*width: 50vw;*/
+
+  background-color: lightgray;
+  margin-bottom: 20px;
+  margin-right: 4px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards:hover{
+
+  background-color: salmon;
+
+}
+
+
+p{
+  margin: 0;
+}
+
+h4{
+  margin-left: 4px;
+  margin-bottom: 4px;
+  margin: 0;
+}
+
+h1{
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a:link{
+  color: black;
+}
+
+.countrynames{
+  font-weight: bold;
+  margin-left: 7px;
+
+}
+
+.capitalRegion{
+  margin-left: 7px;
+}
+
+.bar{
+  background-color: black;
+  height: 13px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.searchBar{
+  margin-bottom: 10px;
+  width: 40%;
+  height: 5%;
+  font-size: 24px;
+}
+
+.back{
+  font-size: 24px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.back:hover{
+  color: teal;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid black;
 }
